@@ -29,14 +29,12 @@ requirements:
   host:
     - r-base
     - r-glue >=1.0.0
-    - r-lifecycle >=0.2.0
     - r-logger >=0.4.0
     - r-shiny >=1.6.0
     - r-withr >=2.1.0
   run:
     - r-base
     - r-glue >=1.0.0
-    - r-lifecycle >=0.2.0
     - r-logger >=0.4.0
     - r-shiny >=1.6.0
     - r-withr >=2.1.0
