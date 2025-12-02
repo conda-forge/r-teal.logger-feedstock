@@ -1,4 +1,4 @@
-{% set version = '0.4.0' %}
+{% set version = "0.4.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/teal.logger_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/teal.logger/teal.logger_{{ version }}.tar.gz
-  sha256: b650208ec968affdfde348da66c644ec8ee7e77fc94433364d0654ce1af786fb
+  sha256: 54116b49e9adb091896d61e3a42d04ccf90bd7161fc8430df1db383738965681
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -49,9 +49,7 @@ test:
 about:
   home: https://insightsengineering.github.io/teal.logger/, https://github.com/insightsengineering/teal.logger/
   license: Apache-2.0
-  summary: Utilizing the 'logger' framework to record events within a package, specific to 'teal'
-    family of packages.  Supports logging namespaces, hierarchical logging, various
-    log destinations, vectorization, and more.
+  summary: Utilizing the 'logger' framework to record events within a package, specific to 'teal' family of packages.  Supports logging namespaces, hierarchical logging, various log destinations, vectorization, and more.
   license_family: APACHE
   license_file:
     - LICENSE-2.0.txt
